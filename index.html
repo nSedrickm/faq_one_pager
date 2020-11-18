@@ -10,14 +10,78 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="preload stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         media="all">
-    <title>Website</title>
+    <title>Afkanerd Stigma Survey</title>
 </head>
 
 <body>
- 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top p-0">
+            <a class="navbar-brand p-2" href="#">Afkanerd Stigma Survey</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_navbar"
+                aria-controls="main_navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="main_navbar">
+                <ul class="navbar-nav px-5">
+                    <li class="nav-item p-2 active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container mt-5 p-5">
+            <h1 class="display-2">Survey</h1>
+            <p class="my-2">Donec at augue sed dolor varius tristique. Ut tempus sem eget nulla pharetra, sed laoreet
+                enim aliquam. Pellentesque eu finibus odio, in scelerisque ligula. Sed egestas ligula sagittis, </p>
+        </div>
+    </header>
+
+    <div class="container p-5">
+        <h2 class="font-weight-bold mb-4">Our Partners</h2>
+
+        <div class="row">
+            <img src="assets/img/who.jpg" class="img-fluid col-md-6">
+            <img src="assets/img/afkanerd.logo.png" class="img-fluid col-md-4 mx-auto">
+        </div>
+    </div>
+
+    <div class="container p-5">
+        <h2 class="font-weight-bold mb-4">FAQs</h2>
+
+        <details class="border p-2 my-2">
+            <summary>System Requirements</summary>
+            <p class="p-2">Requires a computer running an operating system. The computer
+                must have some memory and ideally some kind of long-term storage.
+                An input device as well as some form of output device is
+                recommended.</p>
+        </details>
+
+        <details class="border p-2 my-2">
+            <summary>System Requirements</summary>
+            <p class="p-2">Requires a computer running an operating system. The computer
+                must have some memory and ideally some kind of long-term storage.
+                An input device as well as some form of output device is
+                recommended.</p>
+        </details>
+    </div>
+
+
+    <footer class="bg-dark text-light p-2 text-center">
+        <a class="brand" href="https://afkanerd.io">&copy <span id="date"></span> Afkanerd</a>
+    </footer>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script>
+        //footer date placement
+        var date = document.getElementById("date");
+        date.innerHTML = new Date().getFullYear() + " ";
+    </script>
 </body>
 
 </html>
